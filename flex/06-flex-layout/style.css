@@ -3,8 +3,11 @@
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -24,4 +28,62 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+
+.biiig{
+  display: flex;
+  flex: 25;
+}
+
+.left-side{
+   flex: 1;
+}
+
+.content{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+
+}
+
+.input{
+
+}
+
+.buttons{
+
+}
+
+.right-side{
+   flex: 1
+}
+
+.header, .footer{
+ flex: 1;
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+}
+
+.footer{
+  background-color: #eeeeee;
+}
+
+.left-links, .right-links{
+ display: flex;
+ gap: 20px;
+ margin: 0;
+  padding: 0;
+}
+
+li, a{
+  list-style-type:none;
+  text-decoration: none;
+  color: black;
 }
